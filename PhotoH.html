@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>HieuStudio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--media button-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+  <style>
+video {
+  width: 100%;
+  height: auto;
+}
+
+#more {display: none;}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.footer {
+   position: inherit;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#262626;
+   color: white;
+   text-align: center;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+</style>
+<script type="text/javascript">
+  
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="PhotoH.html">HieuStudio</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="PhotoH.html">Home </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+  </ul>
+  <!--search bar-->
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <!--image carousel 0,1,2-->
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="D:\Destop\Aesthetic\photo1.jpg" alt="chihiro" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Welcome to my studio</h3>
+        <p>This is the website that i upload my every photos</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="D:\Destop\Aesthetic\photo6.jpg" alt="ponyo" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Let's explore something</h3>
+        <p>Some photos may bring you new aspects of life, so take a look as more as possible</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="D:\Destop\Aesthetic\photo4.jpg" alt="wlop" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>My new uploaded photos</h3>
+        <p>When i say "New photos", you say "Hell yes"</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<!--About us-->
+
+<section>
+  <br>
+  <br>
+  <h1 style="text-align: center";>About us</h1>
+  <hr class="w-100">
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="D:\Destop\Aesthetic\ava.jpg" style="width: 400px;height: 400px">
+    </div>
+
+    <div class="col">
+      <h2> Vu Dang Minh Hieu</h2>
+      <!--read more read lesss-->
+      <p>Hi everyone,im Hieu and im a photogragher.<br>
+It does not matter if you run a company or work full-time. By creating a portfolio, you build your professional image. <span id="dots">...</span><span id="more">If you can show off your achievements, you do much better in the eyes of potential employers or clients. It is easy to present to clients what our company is already able to do, in which areas it has experience and what types of projects it has already implemented. In this way, it is also possible to present rare services, the name or description of which might not be a sufficient representation for an unfamiliar client. Such visualization will help him understand what a given company offers.</span></p>
+
+<button onclick="myFunction()" id="myBtn"  type="button" class="btn btn-primary">Read more</button>
+    
+    </div>
+  </div>
+</div>  
+</section>
+
+<!--video-->
+<section>
+  <br>
+  <br>
+  <video width="400" controls>
+  <source src="D:\patch\kda.mp4" type="video/mp4">
+  <source src="kda.mp4" type="video/ogg">
+</video>
+
+
+<!--gallery-->
+</section>
+<section>
+<br>
+<br>
+<h1 style="text-align: center;">Gallery</h1>
+<br> 
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <img src="D:\Destop\Aesthetic\a1.jpg" style="width: 300px ;height:450px">
+            <br>
+            <h2> Kieu Trang</h2>
+            <p>"Love has nothing to do with what you are expecting to get–only with what you are expecting to give–which is everything."</p>
+          </div>
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a2.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Thu Minh</h2>
+            <p>"It is a curious thought, but it is only when you see people looking ridiculous that you realize just how much you love them."</p>
+          </div>
+
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a3.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Khanh Linh</h2>
+            <p>"The greatest happiness of life is the conviction that we are loved; loved for ourselves, or rather, loved in spite of ourselves."</p>
+          </div>
+        
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <img src="D:\Destop\Aesthetic\a4.jpg" style="width: 300px ;height:450px">
+            <br>
+            <h2> Dieu Nhi</h2>
+            <p>"There is always madness in love. But there is also always some reason in madness."</p>
+          </div>
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\embe2.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Minieblue</h2>
+            <p>This is my girl.</p>
+          </div>
+
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a5.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Bao Han</h2>
+            <p>"Love does not consist in gazing at each other, but in looking outward together in the same direction."</p>
+          </div>
+        
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <img src="D:\Destop\Aesthetic\a8.jpg" style="width: 300px ;height:450px">
+            <br>
+            <h2> Kieu Trinh</h2>
+            <p>"Love is a fire. But whether it is going to warm your hearth or burn down your house, you can never tell."</p>
+          </div>
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a7.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2>Quynh Huong</h2>
+            <p>"Love does not consist in gazing at each other, but in looking outward together in the same direction."</p>
+          </div>
+
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a6.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Ha Anh</h2>
+            <p>"When you realize you want to spend the rest of your life with somebody, you want the rest of your life to start as soon as possible."</p>
+          </div>
+        
+      </div>
+    </div>
+    </section>
+    <br>
+    <br>
+<br>
+<!-- Contact us-->
+    <section>
+      <h1 style="text-align: center;"><b>Contact us</h1></b>
+      <div class="container">
+  <div style="text-align:center">
+    
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="D:\Destop\Aesthetic\ji.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+    </section>
+    
+      <br>
+      <br>
+      <!--subscribe newsletter-->
+<section>
+  <form action="action_page.php">
+  <div class="container">
+    <h2 style="text-align: center;">Subscribe to our Newsletter</h2>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
+</section>
+<br>
+<!--footer-->
+<div class="footer">
+  <br>
+  <a href="https://www.facebook.com/nhom.momun" class="fa fa-facebook"></a>
+  <a href="https://www.youtube.com/watch?v=Zzn9-ATB9aU" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/hieuvu_1112/" class="fa fa-instagram"></a>
+<a href="https://twitter.com/komoshuai" class="fa fa-twitter"></a>
+<br>
+<br>
+<p>@2021 Hieustudio. All rights reserved</p>
+<br>
+</div>
+    
+
+
+</body>
+
+  </html>

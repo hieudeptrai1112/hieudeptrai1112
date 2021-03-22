@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>HieuStudio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+  <style>
+video {
+  width: 100%;
+  height: auto;
+}
+
+#more {display: none;}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.footer {
+   position: inherit;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#262626;
+   color: white;
+   text-align: center;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+</style>
+<script type="text/javascript">
+  
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="PhotoH.html">HieuStudio</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="PhotoH.html">Home </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+  </ul>
+  <!--search bar-->
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+
+<section>
+<br>
+<br>
+<h1 style="text-align: center;">Gallery</h1>
+<br> 
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <img src="D:\Destop\Aesthetic\a1.jpg" style="width: 300px ;height:450px">
+            <br>
+            <h2> Kieu Trang</h2>
+            <p>"Love has nothing to do with what you are expecting to get–only with what you are expecting to give–which is everything."</p>
+          </div>
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a2.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Thu Minh</h2>
+            <p>"It is a curious thought, but it is only when you see people looking ridiculous that you realize just how much you love them."</p>
+          </div>
+
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a3.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Khanh Linh</h2>
+            <p>"The greatest happiness of life is the conviction that we are loved; loved for ourselves, or rather, loved in spite of ourselves."</p>
+          </div>
+        
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <img src="D:\Destop\Aesthetic\a4.jpg" style="width: 300px ;height:450px">
+            <br>
+            <h2> Dieu Nhi</h2>
+            <p>"There is always madness in love. But there is also always some reason in madness."</p>
+          </div>
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\embe2.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Minieblue</h2>
+            <p>This is my girl.</p>
+          </div>
+
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a5.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Bao Han</h2>
+            <p>"Love does not consist in gazing at each other, but in looking outward together in the same direction."</p>
+          </div>
+        
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <img src="D:\Destop\Aesthetic\a8.jpg" style="width: 300px ;height:450px">
+            <br>
+            <h2> Kieu Trinh</h2>
+            <p>"Love is a fire. But whether it is going to warm your hearth or burn down your house, you can never tell."</p>
+          </div>
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a7.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2>Quynh Huong</h2>
+            <p>"Love does not consist in gazing at each other, but in looking outward together in the same direction."</p>
+          </div>
+
+
+            <div class="col">
+            <img src="D:\Destop\Aesthetic\a6.jpg" style="width: 300px; height:450px" >
+            <br>
+            <h2> Ha Anh</h2>
+            <p>"When you realize you want to spend the rest of your life with somebody, you want the rest of your life to start as soon as possible."</p>
+          </div>
+        
+      </div>
+    </div>
+    </section>
+    <div class="footer">
+  <br>
+  <a href="https://www.facebook.com/nhom.momun" class="fa fa-facebook"></a>
+  <a href="https://www.youtube.com/watch?v=Zzn9-ATB9aU" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/hieuvu_1112/" class="fa fa-instagram"></a>
+<a href="https://twitter.com/komoshuai" class="fa fa-twitter"></a>
+<br>
+<br>
+<p>@2021 Hieustudio. All rights reserved</p>
+<br>
+</div>
+    </body>
+    </html>

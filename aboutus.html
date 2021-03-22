@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>HieuStudio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+  <style>
+video {
+  width: 100%;
+  height: auto;
+}
+
+#more {display: none;}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+.footer {
+   position: inherit;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#262626;
+   color: white;
+   text-align: center;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+</style>
+<script type="text/javascript">
+  
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="PhotoH.html">HieuStudio</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="PhotoH.html">Home </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+  </ul>
+  <!--search bar-->
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+
+<section>
+  <br>
+  <br>
+  <h1 style="text-align: center";>About us</h1>
+  <hr class="w-100">
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="D:\Destop\Aesthetic\ava.jpg" style="width: 400px;height: 400px">
+    </div>
+
+    <div class="col">
+      <h2> Vu Dang Minh Hieu</h2>
+      <!--read more read lesss-->
+      <p>Hi everyone,im Hieu and im a photogragher.<br>
+It does not matter if you run a company or work full-time. By creating a portfolio, you build your professional image. <span id="dots">...</span><span id="more">If you can show off your achievements, you do much better in the eyes of potential employers or clients. It is easy to present to clients what our company is already able to do, in which areas it has experience and what types of projects it has already implemented. In this way, it is also possible to present rare services, the name or description of which might not be a sufficient representation for an unfamiliar client. Such visualization will help him understand what a given company offers.</span></p>
+
+<button onclick="myFunction()" id="myBtn"  type="button" class="btn btn-primary">Read more</button>
+    
+    </div>
+  </div>
+</div>  
+</section>
+<br>
+<br>
+<section>
+  <form action="action_page.php">
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
+  
+
+</section>
+ <div class="footer">
+  <br>
+  <a href="https://www.facebook.com/nhom.momun" class="fa fa-facebook"></a>
+  <a href="https://www.youtube.com/watch?v=Zzn9-ATB9aU" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/hieuvu_1112/" class="fa fa-instagram"></a>
+<a href="https://twitter.com/komoshuai" class="fa fa-twitter"></a>
+<br>
+<br>
+<p>@2021 Hieustudio. All rights reserved</p>
+<br>
+</div>
+</body>
+</html>
